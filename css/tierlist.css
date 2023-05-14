@@ -7,6 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
+    color: white;
 }
 html{
     scroll-behavior: smooth;
@@ -59,7 +60,6 @@ html{
     margin-top: 10px;
 }
 .navbar .logo a{
-    color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
@@ -67,16 +67,13 @@ html{
     color: crimson;
     transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
-    color: #fff;
-}
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 20px;
@@ -85,9 +82,7 @@ html{
 .navbar .menu li a:hover{
     color: #FFD233;
 }
-.navbar.sticky .menu li a:hover{
-    color: #fff;
-}
+
 /* Search Column */
 .menu .search-box input{
     margin-left: 25px;
@@ -95,7 +90,6 @@ html{
     height: 40px;
     background: #505050;
     border-radius: 50px;
-    color: white;
     padding: 20px;
 }
 ::placeholder{
@@ -108,7 +102,6 @@ html{
     height: 40px;
     background: #FFD233;
     border-radius: 8px;
-
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -116,7 +109,6 @@ html{
 
 /* menu btn styling */
 .menu-btn{
-    color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -126,180 +118,119 @@ html{
 section{
     background-color: #383838;
 }
-.hotnews{
-    display: flex;
-    font-family: 'Ubuntu', sans-serif;
-}
-.hotnews .hotnews-content{
-    margin-top: 120px;
-}
-.hotnews .hotnews-content img{
-    width: 1000px;
-    border-radius: 18px;
-}
-.hotnews .hotnews-content h1{
-    color: white;
-    font-size: 40px;
-}
-.waktu-upload{
-    color: #AEAEAE;
+.title-section{
     font-weight: 700;
-    margin-top: 10px;
-    font-size: 17px;
-}
-.penulis-hotnews{
-    display: flex;
+    font-size: 40px;
     margin-top: 15px;
 }
-.penulis-hotnews .foto-profile{
-    width:60px;
-    height: 60px;
-}
-.penulis-hotnews .foto-profile img{
-    width: 100%;
-    border-radius: 90px;
-}
-.akun-hotnews{
-    display: flex;
-    margin-top: 20px;
-    margin-left: 12px;
-}
-.nama-akun{
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
-}
-.tier-status{
-    color: white;
-    font-size: 10px;
-    margin-left: 5.5px;
-}
-.hotnews .my-width{
-    max-width: 1000px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* populer (homepage) */
-.populer{
-    width: 100%;
-    height: 350px;
-}
-.populer .my-width{
-    display: flex;
-    max-width: 1170px;
-    width: 100%;
-}
-.populer .populer-content{
+.garis-section{
     margin-top: 30px;
     width: 100%;
     border-top: 1px solid #FFD233;
 }
-.title-section{
-    color: white;
-    font-weight: 700;
-    font-size: 40px;
-    margin-top: 15px;
-}
-/* slider */
 
-.bungkus{
-    max-width: 1000px;
+/* Peringkat */
+.peringkat{
+    display: flex;
+}
+.peringkat .my-width{
+    margin-top: 120px;
+    max-width: 1170px;
     width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-.bungkus i{
-    position: relative;
-    padding-top: 6.5px;
-    color: #FFD233;
-    height: 30px;
-    width: 30px;
-    background-color: #505050;
-    text-align: center;
-    border-radius: 50%;
-}
-.bungkus i:first-child{
-    top: 100px;
-}
-.bungkus i:last-child{
-    margin-left: 970px;
-    bottom: 170px;
 }
 .karesel{
-    display: inline-flex;
-}
-
-.kotak{
-    margin-left: 10px;
-    width: 238px;
-    height: 230px;
-    background-color: #383838;
-    border-radius: 8px;
-}
-.kotak img{
-    width: 238px;
-    border-radius: 8px;
-}
-.kotak h2{
-    color: white;
-    padding: 10px;
-    font-size: 20px;
-}
-
-/* Terbaru */
-.terbaru{
+    max-width: 900px;
     width: 100%;
-}
-.terbaru .my-width{
-    display: flex;
-    max-width: 1170px;
-    width: 100%;
-}
-.terbaru .terbaru-content{
-    margin-top: 30px;
-    width: 100%;
-    border-top: 1px solid #FFD233;
-}
-
-.kotak-terbaru{
-    display: flex;
-    height: 182px;
-    width: 95%;
     margin: auto;
 }
-.kotak-terbaru img{
-    height: 182px;
-    border-radius: 8px;
-}
-.text-terbaru{
-    width: 650px;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-.kotak-terbaru h3{
-    font-size: 32px;
-    color: white;
-}
-.penulis-terbaru{
+.peringkat-content{
+    margin-top: 150px;
     display: flex;
-    margin-top: 8px;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
 }
-.penulis-terbaru img{
+.tierlist{
+    display:inline-block;
+    text-align:center;
+}
+.tierlist:nth-child(2){
+    padding-bottom: 200px;
+}
+.tierlist img{
+    display: inline;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.dp2{
+    border: 4px solid #C0C0C0;
+}
+.dp1{
+    border: 4px solid #FFD700;
+}
+.dp3{
+    border: 4px solid #CD7F32;
+}
+.tier-number{
+    position: absolute;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    border: 1px solid #000;
+    margin-top: 110px;
+    margin-left: 55px;
+    color: #000;
+    font-weight: 800;
+    text-align: center;
+    padding: 9px;
+}
+.tier-number.kesatu{
+    background-color: #FFD700;
+}
+.tier-number.kedua{
+    background-color: #C0C0C0;
+}
+.tier-number.ketiga{
+    background-color: #CD7F32;
+}
+.nama-akun{
+    font-weight: 700;
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.crowd i{
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-.akun-terbaru{
-    display: flex;
-    margin-left: 10px;
-    margin-top: 9px;
+/* list */
+.table-wrapper{
+    height: 250px;
 }
-.terbaru-content li{
-    list-style: none;
+
+.fl-table {
+    font-size: 23px;
+    font-weight: 700;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+}
+.fl-table thead{
+    border-top: 1px solid #FFD233 ;
+    border-bottom: 1px solid #FFD233 ;
+}
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    font-size: 16px;
+    font-weight: 100;
 }
 
 /* footer */
@@ -318,11 +249,8 @@ footer .my-width{
     justify-content: center;
     padding-top: 40px;
 }
-.text-footer a{
-    color: white;
-}
+
 .text-footer .pemisah{
-    color: white;
     margin-left: 12px;
     margin-right: 12px;
 }
