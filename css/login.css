@@ -126,9 +126,9 @@ html{
 section{
     background-color: #383838;
 }
-.login-sec{
+/* .login-sec{
     margin: auto;
-}
+} */
 .login-sec .my-width{
     max-width: 600px;
     margin: auto;
@@ -137,21 +137,25 @@ section{
 .judul-hal{
     text-align: center;
     color: white;
+    width: 600px;
+    margin-right: 2000px;
+    margin-left: -85px ;
 }
 .judul-hal .judul{
     font-size: 48px;
     font-weight: 700;
+
 }
 .judul-hal .slogan{
     margin-top: 10px;
     font-size: 24px;
     font-weight: 400;
+    /* width: 600px; */
 }
 .login-box{
     margin-top: 65px;
     display: flex;
     justify-content: center;
-
 }
 .form-login{
     display:block;
@@ -195,6 +199,7 @@ section{
 }
 .container-bawah{
     margin-top: 50px;
+    height: 150px;
 }
 
 .remember-me label{
@@ -215,7 +220,6 @@ section{
 }
 .data-login .non-akun{
     margin-top: 10px;
-    margin-bottom: 70px;
     text-align: center;
     font-weight: 500;
     font-size: 12px;
