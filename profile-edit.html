@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieNerds Profile Edit</title>
+    <link rel="stylesheet" href="css/profile-edit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="js/coba.js">
+    <script src="https://kit.fontawesome.com/7c4f2372d8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="my-width">
+            <div class="logo">
+                <a href="#Home"><img src="img/logo.png" alt=""></a>
+            </div>
+            <ul class="menu">
+                <li><a href="#Article" class="menu-btn">Article</a></li>
+                <li><a href="#Discussion" class="menu-btn">Discussion</a></li>
+                <li><a href="#Tierlist" class="menu-btn">Tierlist</a></li>
+                <li><a href="#About Us" class="menu-btn">About Us</a></li>
+                <li class="search-box">
+                    <input type="text" name="search" placeholder="Search Here.." >
+                </li>
+                <li><a href="#Signin" class="menu-btn">Sign in</a></li>
+                <li><a href="#Signup" class="btn-signup">
+                    <input type="button" value="Sign Up" >
+                </a></li>
+
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="editprofile">
+        <div class="my-width">
+            <div class="title-section"><p>Edit Profil</p></div>
+            <div class="garis-section"></div>
+            <!-- <div class="karesel">  -->
+                
+                    <div class="edit1">
+                        <img src="img/profile-pict.jpg" alt="">
+                        <div class="btn-ganti">
+                            <input type="button" value="Ganti Gambar">
+                        </div>
+                        <div class="btn-hapus">
+                            <input type="button" value="Hapus Gambar" >
+                        </div>
+                    </div>
+
+                    <div class="edit2">
+                        <div class="sub-title-section"><p>Ubah Profil</p></div>
+                        <div class="login-box">
+                            <form action="login" class="form-login">
+                            <div class="data-login">
+                                <label for="username">Username</label>
+                                
+                                <input type="text" name="username" placeholder="jakasembung24">
+                            </div>
+                            <div class="data-login">
+                                <label for="name">Nama</label>
+                                <input type="text" name="name" placeholder="Jaka Sembung">
+                            </div>
+                            <div class="data-login">
+                                <label for="ttl">Tanggal Lahir</label>
+                                <input placeholder="11-24-1999" type="text" onfocus="(this.type = 'date')"  name="ttl" id="ttl">
+                            </div>
+                            <div class="data-login">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" placeholder="jakasembung24@gmail.com">
+                            </div>
+                            <div class="data-login">
+                                <label for="Bio">Bio</label>
+                                <textarea name="bio" placeholder="Penikmat film yang pengen punya kryptonite"></textarea>
+                            </div>
+                            <div class="data-button">
+                                    <div class="btn-simpan">
+                                        <input type="button" name="simpan" value="Simpan">
+                                    </div>
+                            </div>
+                        </form>
+
+                        
+
+
+                           
+                    </div>
+                    </div>
+
+                    <div class="edit2">
+                       
+                        <div class="sub-title-section"><p>Ubah Password</p></div>
+                        <div class="login-box">
+                            <form action="login" class="form-login">
+                            <div class="data-login">
+                                <label for="username">Password awal</label>
+                                <input type="password" name="password" placeholder="********">
+                            </div>
+                            <div class="data-login">
+                                <label for="username">Password baru</label>
+                                <input type="password" name="password-baru" placeholder="********">
+                            </div>
+                            <div class="data-login">
+                                <label for="username">Konfirmasi password baru</label>
+                                <input type="password" name="password-baru" placeholder="********">
+                            </div>
+                            <div class="data-button">
+                                <div class="btn-simpan">
+                                    <input type="button" name="simpan" value="Ubah">
+                                </div>
+                        </div>
+                        </form>
+
+                    </div>
+
+
+
+                    <!-- </div> -->
+
+            <!-- </div> -->
+        </div>
+    </section>
+    <footer>
+        <div class="my-width">
+            <div class="footer-box">
+                <div class="text-footer">
+                    <a href="#ketentuan">Syarat dan Ketentuan</a>
+                    <p class="pemisah"> | </p>
+                    <a href="#ikuti">Ikuti Kami</a>
+                    <p class="pemisah"> | </p>
+                    <a href="about">About</a>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2023 MovieNerds</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieNerds Article Make</title>
+    <link rel="stylesheet" href="css/article-make.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="js/coba.js">
+    <script src="https://kit.fontawesome.com/7c4f2372d8.js" crossorigin="anonymous"></script>
+    <script src="tinymce/tinymce.min.js"></script>
+    <script>     
+    tinymce.init({
+        selector: '#isi-artikel',
+        width: 480,
+        height: 350,
+        branding : false,
+        resize : false,
+        menubar: false,
+        plugins: 'lists, link, fullscreen, visualblocks', 
+        //plugins: 'quickbars',
+        toolbar: 'undo redo h1 h2 bold italic bullist numlist outdent indent link fullscreen' ,
+        // toolbar_mode: 'wrap'
+        skin:'alus'
+        
+    }); 
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="my-width">
+            <div class="logo">
+                <a href="#Home"><img src="img/logo.png" alt=""></a>
+            </div>
+            <ul class="menu">
+                <li><a href="#Article" class="menu-btn">Article</a></li>
+                <li><a href="#Discussion" class="menu-btn">Discussion</a></li>
+                <li><a href="#Tierlist" class="menu-btn">Tierlist</a></li>
+                <li><a href="#About Us" class="menu-btn">About Us</a></li>
+                <li class="search-box">
+                    <input type="text" name="search" placeholder="Search Here.." >
+                </li>
+                <li><a href="#Signin" class="menu-btn">Sign in</a></li>
+                <li><a href="#Signup" class="btn-signup">
+                    <input type="button" value="Sign Up" >
+                </a></li>
+
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="makearticle">
+        <div class="my-width">
+            <div class="title-section"><p>Tulis Artikel</p></div>
+            <div class="garis-section"></div>
+            <!-- <div class="karesel">  -->
+                
+                    <div class="make1">
+                        <div class="login-box">
+                            <form action="login" class="form-login">
+                            <div class="data-login">
+                                <label for="username">Judul Artikel</label>
+                                <input type="text" name="judul-artikel" placeholder="Judul Artikel">
+                            </div>
+
+                            <div class="data-login">
+                                <!-- <label for="name">Isi Artikel</label>
+                                <input type="text" name="isi-artikel"> -->
+                                <label for="isi-artikel">Isi Artikel</label>
+                                <textarea id="isi-artikel" name="isi-artikel" rows="20" cols="30"></textarea>
+                            </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="make2">
+                        <div class="login-box">
+                            <form action="login" class="form-login">
+                                <div class="data-login">
+                                <label for="gambar-cover">Gambar Cover</label>
+                                    <div class="data-gambar">
+                                    <input type="text" name="gambar-cover">
+                                    </div>
+                                </div>
+                            
+                        
+                            <div class="data-login">
+                                <label for="tag">Tag Artikel</label>
+                                <select name="tag" id="tag">
+                                  <option value="" disabled selected hidden >Pilih Opsi</option>
+                                  <option value="Film">Film</option>
+                                  <option value="Indonesia">Indonesia</option>
+                                  <option value="Asia">Asia</option>
+                                  <option value="Barat">Barat</option>
+                                  <option value="Barat">Aksi</option>
+                                  <option value="Barat">Romansa</option>
+                                  <option value="Barat">Soundtrack</option>
+                                </select>
+
+                                <!-- <div class="dropdown">
+                                    <div class="data-login">
+                                            <input type="button" name="submit" id="submit" placeholder="Pilih Opsi">
+                                    <button>HubSpot Resources</button>
+                  
+                                
+                                    <div class="dropdown-content">
+                                    <a href="">Film</a>
+                                    <a href="">Indonesia</a>
+                                    <a href="">Asia</a>
+                                    <a href="">Barat</a>
+                                    </div>
+                                </div>
+                                    
+                                </div> -->
+
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+
+                   
+                    <div class="container-bawah">
+                        <div class="btn-simpan">
+                            <input type="button" name="submit" id="submit" value="Simpan sebagai Draft">
+                        </div>
+
+                        <div class="btn-kirim">
+                            <input type="button" name="submit" id="submit" value="Kirim">
+                        </div>
+                    </div>
+                    
+                       
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="my-width">
+            <div class="footer-box">
+                <div class="text-footer">
+                    <a href="#ketentuan">Syarat dan Ketentuan</a>
+                    <p class="pemisah"> | </p>
+                    <a href="#ikuti">Ikuti Kami</a>
+                    <p class="pemisah"> | </p>
+                    <a href="about">About</a>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2023 MovieNerds</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
